@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightWeb Studio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; }
+    header, footer { background: #222; color: #fff; padding: 1rem; text-align: center; }
+    nav { background: #333; color: #fff; display: flex; justify-content: center; }
+    nav a { color: #fff; padding: 0.75rem 1.5rem; text-decoration: none; }
+    nav a:hover { background: #444; }
+
+    .container { display: grid; grid-template-columns: 250px 1fr; min-height: 80vh; }
+    aside { background: #f4f4f4; padding: 1rem; }
+    main { padding: 1rem; }
+
+    .hero { background: #0077cc; color: #fff; padding: 2rem; text-align: center; border-radius: 8px; margin-bottom: 1rem; }
+    .cards { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .card { background: #fff; padding: 1rem; flex: 1; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .card h3 { margin-bottom: 0.5rem; }
+    .card p { margin-bottom: 1rem; }
+    .btn { display: inline-block; padding: 0.5rem 1rem; margin-right: 0.5rem; border-radius: 4px; border: none; cursor: pointer; }
+    .btn.primary { background: #0077cc; color: #fff; }
+    .btn:hover { opacity: 0.9; }
+
+    footer { font-size: 0.9rem; }
+
+    @media (max-width: 768px) {
+      .container { grid-template-columns: 1fr; }
+      nav { flex-direction: column; }
+      .cards { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BrightWeb Studio</h1>
+    <p>We design clean, modern, and responsive websites that help you stand out.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <aside>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#services">Web Design</a></li>
+        <li><a href="#services">E-Commerce</a></li>
+        <li><a href="#services">Branding</a></li>
+        <li><a href="#contact">Get a Quote</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <h2>Websites that Work</h2>
+        <p>Your business deserves more than just a template. We craft digital experiences that are fast, mobile-friendly, and tailored to your goals.</p>
+      </section>
+
+      <section id="services" class="cards">
+        <article class="card">
+          <h3>Custom Websites</h3>
+          <p>Unique designs built from scratch to reflect your brand identity.</p>
+          <button class="btn">Learn More</button>
+          <button class="btn primary">Start a Project</button>
+        </article>
+        <article class="card">
+          <h3>E-Commerce Solutions</h3>
+          <p>From product catalogs to secure payments, we set you up for online success.</p>
+          <button class="btn">See Examples</button>
+          <button class="btn primary">Get Started</button>
+        </article>
+        <article class="card">
+          <h3>Responsive Design</h3>
+          <p>Whether it’s a phone, tablet, or desktop — your site will always look perfect.</p>
+          <button class="btn">Preview</button>
+          <button class="btn primary">Request Demo</button>
+        </article>
+      </section>
+
+      <section id="about" style="margin-top:2rem;">
+        <h2>About Us</h2>
+        <p>At BrightWeb Studio, we’re a small team of developers and designers passionate about helping businesses grow online. We believe in simplicity, speed, and results that speak for themselves.</p>
+      </section>
+
+      <section id="portfolio" style="margin-top:2rem;">
+        <h2>Our Work</h2>
+        <p>Here are a few recent projects we’ve delivered for clients across different industries. (Insert screenshots or thumbnails here)</p>
+      </section>
+
+      <section id="contact" style="margin-top:2rem;">
+        <h2>Get in Touch</h2>
+        <p>Have a project in mind? Let’s talk. Drop us a message and we’ll get back within 24 hours.</p>
+        <p>Email: hello@brightweb.com</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 BrightWeb Studio. All rights reserved.</p>
+  </footer>
+
+</body></html>
